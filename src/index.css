@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap'); */
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
+
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+    }
+  }
+
+  @layer base {
+
+    /* .responsive-text-title {
+      font-size: max(48px, min(7vh, 4vw));
+    }
+
+    .responsive-text-sm {
+      font-size: max(14px, min(2vh, 1.2vw));
+    } */
+
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+
+    .text-subtitle {
+      @apply text-2xl md:text-3xl 2xl:text-subtle font-bold;
+    }
+  }
+  body{
+    /* background-color: #000; */
+    color:#fff;
+    /* background-image: url('@/assets/bg.png'); */
+    /* background-size: cover; */
+    /* background-size: 100%; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background: linear-gradient(0deg, #000000 0%, #151515 17%, #121212 58%, #121212 100%); */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* 确保底部图案在页面底部重复 */
+  background-color: #000;
+  background-image:url('/src/assets/bgdot.png');
+  background-repeat: repeat; /* 图案重复，渐变不重复 */
+  background-size:100%;
+  background-position:top;
+  /* background-repeat: repeat, no-repeat; 图案重复，渐变不重复 */
+  /* background-size: cover, auto; 渐变覆盖整个背景，图案自动调整大小 */
+  /* background-position: top, bottom; 渐变从顶部开始，图案从底部开始 */
+  }
+  .bg-bottom-auto {
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-custom-img {
+    background-image: url('/src/assets/Ellipse.png'); 
+    /* bacxkground-position: bottom; */
+  }
+  .bg-menu-img {
+    background: url('/src/assets/cornergradient.png') no-repeat bottom;
+    
+    /* bacxkground-position: bottom; */
+  }
+  .bg-blur {
+
+      background: 
+        rgba(255, 255, 255, 0.3), /* 半透明背景色 */
+        linear-gradient(270deg, rgba(72, 170, 173, 0.5) 0%, rgba(23, 125, 219, 0.5) 100%); /* 线性渐变 */
+      backdrop-filter: blur(10px); /* 可选：虚化效果 */
+      -webkit-backdrop-filter: blur(10px); /* 兼容 Safari 的虚化效果 */
+  }
+  .ab-center {
+    left: 50%;
+      transform: translateX(-50%); 
+  }
+  .img-center{
+    top: 50%;
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+  }
+  .ant-menu-title-content{
+    /* color: #fff; */
+    font-family: 'Anonymous Pro', monospace;
+  }
+
+  /* :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light.ant-menu-submenu-popup>.ant-menu, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu.ant-menu-submenu-popup>.ant-menu{
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.25) 100%),url('/src/assets/cornergradient.png') no-repeat bottom;
+    backdrop-filter: blur(8px);
+  } */
+  .ant-menu{
+    text-align: left;
+    background: black;
+  }
+  .separator {
+    margin: 0 8px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* .ant-menu-overflow-item .ant-menu-submenu .ant-menu-submenu-horizontal{
+    color:red!important;
+  } */
+  /* :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light .ant-menu-item, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu .ant-menu-item, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light .ant-menu-submenu-title, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu .ant-menu-submenu-title{
+    color:#fff;
+  } */
+
+
+  :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) >.ant-menu-submenu-title:hover, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) >.ant-menu-submenu-title:hover{
+    color:#177DDB;
+  }
+
+  .ant-menu-item{
+    color: #fff!important;
+  }
+  .ant-menu-submenu-title{
+    color: #fff!important;
+  }
+
