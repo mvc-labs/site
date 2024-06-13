@@ -9,7 +9,7 @@ const useIntersectionObserver = (options) => {
         if (entry.isIntersecting) {
             //@ts-ignore
           elementRef.current.classList.add('animate-fade-in');
-          observer.unobserve(entry.target); // 触发后停止观察
+          observer.unobserve(entry.target);
         }
       },
       { threshold: 0.1, ...options }

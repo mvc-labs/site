@@ -88,25 +88,15 @@
     }
   }
   body{
-    /* background-color: #000; */
     color:#fff;
-    /* background-image: url('@/assets/bg.png'); */
-    /* background-size: cover; */
-    /* background-size: 100%; */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background: linear-gradient(0deg, #000000 0%, #151515 17%, #121212 58%, #121212 100%); */
-  /* background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
-  /* 确保底部图案在页面底部重复 */
   background-color: #000;
   background-image:url('/src/assets/bgdot.png');
-  background-repeat: repeat; /* 图案重复，渐变不重复 */
+  background-repeat: repeat; 
   background-size:100%;
   background-position:top;
-  /* background-repeat: repeat, no-repeat; 图案重复，渐变不重复 */
-  /* background-size: cover, auto; 渐变覆盖整个背景，图案自动调整大小 */
-  /* background-position: top, bottom; 渐变从顶部开始，图案从底部开始 */
+  /* background-repeat: repeat, no-repeat; 
+  /* background-size: cover, auto;
+  /* background-position: top, bottom; 
   }
   .bg-bottom-auto {
     background-position: bottom;
@@ -126,10 +116,10 @@
   .bg-blur {
 
       background: 
-        rgba(255, 255, 255, 0.3), /* 半透明背景色 */
-        linear-gradient(270deg, rgba(72, 170, 173, 0.5) 0%, rgba(23, 125, 219, 0.5) 100%); /* 线性渐变 */
-      backdrop-filter: blur(10px); /* 可选：虚化效果 */
-      -webkit-backdrop-filter: blur(10px); /* 兼容 Safari 的虚化效果 */
+        rgba(255, 255, 255, 0.3),
+        linear-gradient(270deg, rgba(72, 170, 173, 0.5) 0%, rgba(23, 125, 219, 0.5) 100%); 
+      backdrop-filter: blur(10px); 
+      -webkit-backdrop-filter: blur(10px); 
   }
   .ab-center {
     left: 50%;
@@ -145,10 +135,6 @@
     font-family: 'Anonymous Pro', monospace;
   }
 
-  /* :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light.ant-menu-submenu-popup>.ant-menu, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu.ant-menu-submenu-popup>.ant-menu{
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.25) 100%),url('/src/assets/cornergradient.png') no-repeat bottom;
-    backdrop-filter: blur(8px);
-  } */
   .ant-menu{
     text-align: left;
     background: black;
@@ -159,13 +145,6 @@
     font-size: 16px;
     line-height: 22px;
   }
-  /* .ant-menu-overflow-item .ant-menu-submenu .ant-menu-submenu-horizontal{
-    color:red!important;
-  } */
-  /* :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light .ant-menu-item, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu .ant-menu-item, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light .ant-menu-submenu-title, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu .ant-menu-submenu-title{
-    color:#fff;
-  } */
-
 
   :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) >.ant-menu-submenu-title:hover, :where(.css-dev-only-do-not-override-j9bb5n).ant-menu-light>.ant-menu .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) >.ant-menu-submenu-title:hover{
     color:#177DDB;

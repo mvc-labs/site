@@ -182,7 +182,7 @@ function App() {
 
   const scrollToSecondScreen = () => {
     if (secondScreenRef.current) {
-      const navbarHeight = 48; // 导航栏的高度
+      const navbarHeight = 48; 
       //@ts-ignore
       const offset = secondScreenRef.current.offsetTop - navbarHeight;
       window.scrollTo({ top: offset, behavior: "smooth" });
@@ -1206,7 +1206,7 @@ function App() {
                   <div>Category</div>
                 </div>
                 <div className="text-xl 2xl:text-2xl font-bold leading-tight">
-                  Microvisioinchain发布Node0.2.0升级来提升处理功能及降低费用
+                  
                 </div>
                 <div
                   className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
