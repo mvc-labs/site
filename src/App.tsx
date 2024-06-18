@@ -604,7 +604,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="sm:h-[100dvh] box-border bg-hero-pattern bg-no-repeat bg-center bg-contain relative">
+        <div className="lg:h-[100dvh] box-border bg-hero-pattern bg-no-repeat bg-center bg-contain relative">
           <div className="container relative pt-20 lg:pt-[6rem] 2xl:pt-40">
             {/* <div className="container relative pt-20 lg:pt-[18vh]"> */}
             <div className="font-bold text-2xl md:text-3xl lg:text-4xl lg:leading-tight xl2:text-title">
@@ -621,13 +621,13 @@ function App() {
             </div> */}
 
             <div className="text-sm font-normal">
-              Lorem ipsum dolor sit amet consectetur. Mi vitae aliquam
+            AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC 
             </div>
             <div className="text-sm font-normal">
-              amet commodo at donec. Pharetra amet leo at in adipiscing.
+            UNLOCKS BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND 
             </div>
             <div className="text-sm font-normal mb-4 xl2:mb-8">
-              Feugiat non varius dignissim neque.
+            WEB3 APPLICATIONS.
             </div>
 
             {/* <div className="text-xl inline-flex items-center group cursor-pointer 2xl:mb-8">
@@ -652,8 +652,8 @@ function App() {
               />
             </div>
 
-            <div className="mt-8 mb-8 lg:mt-0 lg:mb-0 lg:flex items-center w-full justify-end">
-              <div className="cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mr-6 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
+            <div className="flex flex-col sm:flex-row mt-8 mb-8 lg:mt-0 lg:mb-0 items-center w-full lg:justify-end">
+              <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mr-6 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
                 <img src={Icon5} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   SCALING BITCOIN
@@ -688,7 +688,7 @@ function App() {
                 </div>
               </div> */}
 
-              <div className="cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 lg:mr-6 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
+              <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 lg:mr-6 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
                 <img src={Icon6} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   ONBOARD WEB3
@@ -720,7 +720,7 @@ function App() {
                   />
                 </div>
               </div> */}
-              <div className="cursor-pointer  p-4 h-56 bg-no-repeat lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52  2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
+              <div className="w-full sm:w-[32%] cursor-pointer p-4 h-56 bg-no-repeat lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52  2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
                 <img src={Icon7} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   BUILD TOGETHER
@@ -858,7 +858,7 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 mt-8 mb-24 lg:mb-48 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <img src={Icon8} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead mb-4 font-bold">KNOWLEDGE BASE</div>
               <div>
@@ -878,7 +878,7 @@ function App() {
                 />
               </div>
             </div>
-            <div className="border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <img src={Icon9} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead mb-4 font-bold">
                 Mine Your $Space
@@ -899,7 +899,7 @@ function App() {
                 />
               </div>
             </div>
-            <div className="border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <img src={Icon10} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead mb-4 font-bold">Why MVC</div>
               <div className="text-sm text-[#86888B]">
@@ -1060,7 +1060,7 @@ function App() {
 
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="box-border flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer box-border flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer1}
@@ -1093,7 +1093,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer2}
@@ -1126,7 +1126,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer3}
