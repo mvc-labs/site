@@ -182,7 +182,7 @@ function App() {
 
   const scrollToSecondScreen = () => {
     if (secondScreenRef.current) {
-      const navbarHeight = 48; 
+      const navbarHeight = 48;
       //@ts-ignore
       const offset = secondScreenRef.current.offsetTop - navbarHeight;
       window.scrollTo({ top: offset, behavior: "smooth" });
@@ -313,6 +313,53 @@ function App() {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
+  const [isPopoverOpen1, setIsPopoverOpen1] = useState(false);
+  const [isPopoverOpen2, setIsPopoverOpen2] = useState(false);
+  const [isPopoverOpen3, setIsPopoverOpen3] = useState(false);
+  const [isPopoverOpen4, setIsPopoverOpen4] = useState(false);
+  const [isPopoverOpen5, setIsPopoverOpen5] = useState(false);
+  const buttonRef1 = useRef(null);
+  const buttonRef2 = useRef(null);
+  const buttonRef3 = useRef(null);
+  const buttonRef4 = useRef(null);
+  const buttonRef5 = useRef(null);
+
+  const openPopover1 = () => {
+    setIsPopoverOpen1(true);
+  };
+
+  const closePopover1 = () => {
+    setIsPopoverOpen1(false);
+  };
+  const openPopover2 = () => {
+    setIsPopoverOpen2(true);
+  };
+
+  const closePopover2 = () => {
+    setIsPopoverOpen2(false);
+  };
+  const openPopover3 = () => {
+    setIsPopoverOpen3(true);
+  };
+
+  const closePopover3 = () => {
+    setIsPopoverOpen3(false);
+  };
+  const openPopover4 = () => {
+    setIsPopoverOpen4(true);
+  };
+
+  const closePopover4 = () => {
+    setIsPopoverOpen4(false);
+  };
+  const openPopover5 = () => {
+    setIsPopoverOpen5(true);
+  };
+
+  const closePopover5 = () => {
+    setIsPopoverOpen5(false);
+  };
+
   return (
     <>
       <div className="overflow-auto font-sans">
@@ -321,12 +368,13 @@ function App() {
           id="navbar"
         >
           <div className="container h-12 mx-auto flex items-center justify-between">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 flex">
               <img
                 src={mainLogo}
                 alt="Main Logo"
                 className="w-[95px] h-[26px]"
               />
+              <div className="ml-4 text-[12px]">@preview</div>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:text-center lg:ml-16">
               {/* <Menu
@@ -341,63 +389,71 @@ function App() {
                 </div> */}
                 <div>//</div>
                 <Popover>
-                  <PopoverButton className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
-                    LEARN
-                  </PopoverButton>
-                  <Transition
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <PopoverPanel
-                      anchor="bottom"
-                      className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                  <div onMouseEnter={openPopover1} onMouseLeave={closePopover1}>
+                    <PopoverButton
+                      ref={buttonRef1}
+                      className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white"
                     >
-                      <div className="p-3">
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· What is UTXO?</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Why MVC?</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Roadmap</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Founder</p>
-                        </a>
+                      LEARN
+                    </PopoverButton>
+                    <Transition
+                      show={isPopoverOpen1}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 translate-y-1"
+                    >
+                      <PopoverPanel
+                        anchor="bottom"
+                        className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                      >
+                        <div className="p-3">
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· What is UTXO?</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Why MVC?</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Roadmap</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Founder</p>
+                          </a>
 
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· FAQ</p>
-                        </a>
-                      </div>
-                    </PopoverPanel>
-                  </Transition>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· FAQ</p>
+                          </a>
+                        </div>
+                      </PopoverPanel>
+                    </Transition>
+                  </div>
                 </Popover>
                 <div>/</div>
                 <Popover>
-                  <PopoverButton className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
+                <div onMouseEnter={openPopover2} onMouseLeave={closePopover2}>
+                  <PopoverButton ref={buttonRef2} className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
                     SOLUTION
                   </PopoverButton>
                   <Transition
+                    show={isPopoverOpen2}
                     enter="transition ease-out duration-200"
                     enterFrom="opacity-0 translate-y-1"
                     enterTo="opacity-100 translate-y-0"
@@ -450,13 +506,16 @@ function App() {
                       </div>
                     </PopoverPanel>
                   </Transition>
+                  </div>
                 </Popover>
                 <div>/</div>
                 <Popover>
-                  <PopoverButton className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
+                <div onMouseEnter={openPopover3} onMouseLeave={closePopover3}>
+                  <PopoverButton ref={buttonRef3} className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
                     BUILD
                   </PopoverButton>
                   <Transition
+                    show={isPopoverOpen3}
                     enter="transition ease-out duration-200"
                     enterFrom="opacity-0 translate-y-1"
                     enterTo="opacity-100 translate-y-0"
@@ -484,13 +543,16 @@ function App() {
                       </div>
                     </PopoverPanel>
                   </Transition>
+                  </div>
                 </Popover>
                 <div>/</div>
                 <Popover>
-                  <PopoverButton className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
+                <div onMouseEnter={openPopover4} onMouseLeave={closePopover4}>
+                  <PopoverButton ref={buttonRef4} className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
                     SPACE
                   </PopoverButton>
                   <Transition
+                    show={isPopoverOpen4}
                     enter="transition ease-out duration-200"
                     enterFrom="opacity-0 translate-y-1"
                     enterTo="opacity-100 translate-y-0"
@@ -524,6 +586,7 @@ function App() {
                       </div>
                     </PopoverPanel>
                   </Transition>
+                  </div>
                 </Popover>
                 <div>/</div>
                 <div className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white cursor-pointer hover:text-gradient">
@@ -535,10 +598,12 @@ function App() {
                 </div>
                 <div>/</div>
                 <Popover>
-                  <PopoverButton className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
+                <div onMouseEnter={openPopover5} onMouseLeave={closePopover5}>
+                  <PopoverButton ref={buttonRef5} className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
                     BRIDGE
                   </PopoverButton>
                   <Transition
+                    show={isPopoverOpen5}
                     enter="transition ease-out duration-200"
                     enterFrom="opacity-0 translate-y-1"
                     enterTo="opacity-100 translate-y-0"
@@ -566,6 +631,7 @@ function App() {
                       </div>
                     </PopoverPanel>
                   </Transition>
+                  </div>
                 </Popover>
               </div>
             </div>
@@ -621,13 +687,13 @@ function App() {
             </div> */}
 
             <div className="text-sm font-normal">
-            AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC 
+              AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC
             </div>
             <div className="text-sm font-normal">
-            UNLOCKS BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND 
+              UNLOCKS BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND
             </div>
             <div className="text-sm font-normal mb-4 xl2:mb-8">
-            WEB3 APPLICATIONS.
+              WEB3 APPLICATIONS.
             </div>
 
             {/* <div className="text-xl inline-flex items-center group cursor-pointer 2xl:mb-8">
