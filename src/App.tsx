@@ -374,6 +374,7 @@ function App() {
                 alt="Main Logo"
                 className="w-[95px] h-[26px]"
               />
+              {/* preview  */}
               <div className="ml-4 text-[12px]">@preview</div>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:text-center lg:ml-16">
