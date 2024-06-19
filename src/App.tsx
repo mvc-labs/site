@@ -916,7 +916,7 @@ function App() {
               className="text-left text-subtitle mb-8 xl2:leading-none 2xl:mb-32"
             >
               <div>A UTXO model blockchain</div>
-              <div>built for 8 billion</div>
+              <div>built for <span className="text-gradient">8 billion</span></div>
               <div>users in mind.</div>
             </div>
             <div ref={imgRef} className="flex justify-center">
@@ -929,16 +929,14 @@ function App() {
             <div ref={textRef2} className="text-right text-subtitle">
               <div>1:1 Satoshi Mapping makes</div>
               <div>our blockchain the ideal</div>
-              <div>BTC scaling solution.</div>
-              {/* <div className="inline-flex items-baseline">
-                Denominate{" "}
+              <div className="inline-flex items-baseline">
                 <img
                   src={Icon3}
                   alt=""
-                  className="self-center w-6 h-6 lg:w-12 lg:h-12 rounded-full mx-1 ml-6"
+                  className="self-center w-6 h-6 lg:w-12 lg:h-12 rounded-full mr-4"
                 />
-                Bitcoin.
-              </div> */}
+                BTC scaling solution.
+              </div>
             </div>
           </div>
           <div>
