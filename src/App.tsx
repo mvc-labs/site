@@ -892,7 +892,7 @@ function App() {
           <div className="mb-12">
             <div
               ref={textRef1}
-              className="text-left text-subtitle mb-8 2xl:mb-32"
+              className="text-left text-subtitle mb-8 xl2:leading-none 2xl:mb-32"
             >
               <div>Empowering the</div>
               <div>Smooth Transition</div>
