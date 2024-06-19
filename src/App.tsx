@@ -312,6 +312,27 @@ function App() {
     }
     window.open(url, "_blank", "noopener,noreferrer");
   };
+  const handleBottomClick = (type: any) => {
+    let bottomUrl;
+    switch (type) {
+      case "1":
+        bottomUrl =
+          "https://x.com/mvcglobal";
+        break;
+      case "2":
+        bottomUrl = "mailto:partnerships@microvisionchain.com";
+        break;
+      case "3":
+        bottomUrl =
+          "https://discord.com/invite/RGHWazu9eS";
+        break;
+      case "4":
+        bottomUrl =
+          "https://t.me/mvcofficial";
+        break;
+    }
+    window.open(bottomUrl, "_blank", "noopener,noreferrer");
+  };
 
   const [isPopoverOpen1, setIsPopoverOpen1] = useState(false);
   const [isPopoverOpen2, setIsPopoverOpen2] = useState(false);
@@ -894,13 +915,9 @@ function App() {
               ref={textRef1}
               className="text-left text-subtitle mb-8 xl2:leading-none 2xl:mb-32"
             >
-              <div>Empowering the</div>
-              <div>Smooth Transition</div>
-              <div>of Billions Everyday</div>
-              <div>
-                Users,<span className="text-gradient">aged 8 to 80</span>,
-              </div>
-              <div>into the Web3 Era</div>
+              <div>A UTXO model blockchain</div>
+              <div>built for 8 billion</div>
+              <div>users in mind.</div>
             </div>
             <div ref={imgRef} className="flex justify-center">
               <img
@@ -910,9 +927,10 @@ function App() {
               />
             </div>
             <div ref={textRef2} className="text-right text-subtitle">
-              <div>Become the Best</div>
-              <div>Sidechain to Scale and</div>
-              <div className="inline-flex items-baseline">
+              <div>1:1 Satoshi Mapping makes</div>
+              <div>our blockchain the ideal</div>
+              <div>BTC scaling solution.</div>
+              {/* <div className="inline-flex items-baseline">
                 Denominate{" "}
                 <img
                   src={Icon3}
@@ -920,7 +938,7 @@ function App() {
                   className="self-center w-6 h-6 lg:w-12 lg:h-12 rounded-full mx-1 ml-6"
                 />
                 Bitcoin.
-              </div>
+              </div> */}
             </div>
           </div>
           <div>
@@ -1106,13 +1124,13 @@ function App() {
             />
             <div>
               <div>
-              $SPACE IS OUT NATIVE GAS TOKEN. IT’S OBTAINED VIA PROOF-OF-
+                $SPACE IS OUT NATIVE GAS TOKEN. IT’S OBTAINED VIA PROOF-OF-
               </div>
               <div>
-              WORK OR PROOF-OF-BUILD. $SPACE IS VALUABLE AS A GAS TOKEN AND
+                WORK OR PROOF-OF-BUILD. $SPACE IS VALUABLE AS A GAS TOKEN AND
               </div>
               <div>
-              THEREFORE SHOULD NOT BE SEEN AS A PRICE SPECULATIVE ASSET.
+                THEREFORE SHOULD NOT BE SEEN AS A PRICE SPECULATIVE ASSET.
               </div>
             </div>
           </div>
@@ -1328,7 +1346,7 @@ function App() {
 
         <div className="container font-normal text-base mt-16">
           <div className="flex box-border border-solid border-[#3D3D3D] border-y py-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-24">
               <div className="flex flex-col space-y-2">
                 <div className="text-2xl font-bold">Learn</div>
                 <div className="space-y-1 text-[#86888B] text-base leading-7">
@@ -1425,10 +1443,30 @@ function App() {
               <img src={mainLogo} alt="" className="w-[80px] h-[22px]" />
             </div>
             <div className="flex items-center box-border border-l border-solid border-[#3D3D3D] pl-8">
-              <img src={Icon11} alt="" className="w-6 h-6" />
-              <img src={Icon12} alt="" className="w-6 h-6 ml-8" />
-              <img src={Icon13} alt="" className="w-6 h-6 ml-8" />
-              <img src={Icon14} alt="" className="w-6 h-6 ml-8" />
+              <img
+                src={Icon11}
+                alt=""
+                className="w-6 h-6 cursor-pointer"
+                onClick={() => handleBottomClick("1")}
+              />
+              <img
+                src={Icon12}
+                alt=""
+                className="w-6 h-6 ml-8 cursor-pointer"
+                onClick={() => handleBottomClick("2")}
+              />
+              <img
+                src={Icon13}
+                alt=""
+                className="w-6 h-6 ml-8 cursor-pointer"
+                onClick={() => handleBottomClick("3")}
+              />
+              <img
+                src={Icon14}
+                alt=""
+                className="w-6 h-6 ml-8 cursor-pointer"
+                onClick={() => handleBottomClick("4")}
+              />
             </div>
           </div>
         </div>
