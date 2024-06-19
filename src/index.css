@@ -84,7 +84,7 @@
     }
 
     .text-subtitle {
-      @apply text-2xl md:text-3xl 2xl:text-subtle font-bold;
+      @apply text-2xl md:text-3xl xl2:text-subtle font-bold;
     }
   }
   body{
