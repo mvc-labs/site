@@ -449,144 +449,153 @@ function App() {
                 </Popover>
                 <div>/</div>
                 <Popover>
-                <div onMouseEnter={openPopover2} onMouseLeave={closePopover2}>
-                  <PopoverButton ref={buttonRef2} className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
-                    SOLUTION
-                  </PopoverButton>
-                  <Transition
-                    show={isPopoverOpen2}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <PopoverPanel
-                      anchor="bottom"
-                      className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                  <div onMouseEnter={openPopover2} onMouseLeave={closePopover2}>
+                    <PopoverButton
+                      ref={buttonRef2}
+                      className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white"
                     >
-                      <div className="p-3">
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· BVM</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· MetaTXID</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· MetaContract</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· MetaID</p>
-                        </a>
+                      SOLUTION
+                    </PopoverButton>
+                    <Transition
+                      show={isPopoverOpen2}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 translate-y-1"
+                    >
+                      <PopoverPanel
+                        anchor="bottom"
+                        className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                      >
+                        <div className="p-3">
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· BVM</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· MetaTXID</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· MetaContract</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· MetaID</p>
+                          </a>
 
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Zero-Confirmation</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Technical Doc</p>
-                        </a>
-                      </div>
-                    </PopoverPanel>
-                  </Transition>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Zero-Confirmation</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Technical Doc</p>
+                          </a>
+                        </div>
+                      </PopoverPanel>
+                    </Transition>
                   </div>
                 </Popover>
                 <div>/</div>
                 <Popover>
-                <div onMouseEnter={openPopover3} onMouseLeave={closePopover3}>
-                  <PopoverButton ref={buttonRef3} className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
-                    BUILD
-                  </PopoverButton>
-                  <Transition
-                    show={isPopoverOpen3}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <PopoverPanel
-                      anchor="bottom"
-                      className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                  <div onMouseEnter={openPopover3} onMouseLeave={closePopover3}>
+                    <PopoverButton
+                      ref={buttonRef3}
+                      className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white"
                     >
-                      <div className="p-3">
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Why Build on MVC?</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Builder Grant</p>
-                        </a>
-                      </div>
-                    </PopoverPanel>
-                  </Transition>
+                      BUILD
+                    </PopoverButton>
+                    <Transition
+                      show={isPopoverOpen3}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 translate-y-1"
+                    >
+                      <PopoverPanel
+                        anchor="bottom"
+                        className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                      >
+                        <div className="p-3">
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Why Build on MVC?</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Builder Grant</p>
+                          </a>
+                        </div>
+                      </PopoverPanel>
+                    </Transition>
                   </div>
                 </Popover>
                 <div>/</div>
                 <Popover>
-                <div onMouseEnter={openPopover4} onMouseLeave={closePopover4}>
-                  <PopoverButton ref={buttonRef4} className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
-                    SPACE
-                  </PopoverButton>
-                  <Transition
-                    show={isPopoverOpen4}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <PopoverPanel
-                      anchor="bottom"
-                      className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                  <div onMouseEnter={openPopover4} onMouseLeave={closePopover4}>
+                    <PopoverButton
+                      ref={buttonRef4}
+                      className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white"
                     >
-                      <div className="p-3">
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Mine SPACE</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Tokenomic</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Mine SPACE</p>
-                        </a>
-                      </div>
-                    </PopoverPanel>
-                  </Transition>
+                      SPACE
+                    </PopoverButton>
+                    <Transition
+                      show={isPopoverOpen4}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 translate-y-1"
+                    >
+                      <PopoverPanel
+                        anchor="bottom"
+                        className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                      >
+                        <div className="p-3">
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Mine SPACE</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Tokenomic</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Mine SPACE</p>
+                          </a>
+                        </div>
+                      </PopoverPanel>
+                    </Transition>
                   </div>
                 </Popover>
                 <div>/</div>
@@ -599,39 +608,42 @@ function App() {
                 </div>
                 <div>/</div>
                 <Popover>
-                <div onMouseEnter={openPopover5} onMouseLeave={closePopover5}>
-                  <PopoverButton ref={buttonRef5} className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white">
-                    BRIDGE
-                  </PopoverButton>
-                  <Transition
-                    show={isPopoverOpen5}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <PopoverPanel
-                      anchor="bottom"
-                      className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                  <div onMouseEnter={openPopover5} onMouseLeave={closePopover5}>
+                    <PopoverButton
+                      ref={buttonRef5}
+                      className="text-sm/6  text-white focus:outline-none data-[active]:text-white data-[hover]:text-gradient data-[focus]:outline-1 data-[focus]:outline-white"
                     >
-                      <div className="p-3">
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Bridge to Bitcoin</p>
-                        </a>
-                        <a
-                          className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                          href="#"
-                        >
-                          <p className=" text-white">· Bridge to EVM</p>
-                        </a>
-                      </div>
-                    </PopoverPanel>
-                  </Transition>
+                      BRIDGE
+                    </PopoverButton>
+                    <Transition
+                      show={isPopoverOpen5}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 translate-y-1"
+                    >
+                      <PopoverPanel
+                        anchor="bottom"
+                        className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
+                      >
+                        <div className="p-3">
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Bridge to Bitcoin</p>
+                          </a>
+                          <a
+                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
+                            href="#"
+                          >
+                            <p className=" text-white">· Bridge to EVM</p>
+                          </a>
+                        </div>
+                      </PopoverPanel>
+                    </Transition>
                   </div>
                 </Popover>
               </div>
@@ -947,12 +959,12 @@ function App() {
             </div>
             <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <img src={Icon9} alt="" className="w-28 h-28 mb-8" />
-              <div className="text-subhead mb-4 font-bold">
-                Mine Your $Space
-              </div>
+              <div className="text-subhead font-bold">DECENTRALIZED VIA</div>
+              <div className="text-subhead mb-4 font-bold">PROOF-OF-WORK</div>
               <div>
                 <div className="text-sm text-[#86888B]">
-                  SPACE is MVC's network gas, native to the MicrovisionChain.
+                  $SPACE, our native gas token, is mined using the SHA-256
+                  algorithm; popularised by Bitcoin.
                 </div>
               </div>
               <div className="flex items-center absolute right-7 bottom-7 group cursor-pointer">
@@ -997,16 +1009,13 @@ function App() {
               className="w-8 my-4 md:my-0 md:w-16 xl:w-auto"
             />
             <div>
-              <div>
-                Imagine using Bitcoin to buy pizza and coffee, with minimal
-              </div>
-              <div>fees and instant transactions.</div>
-              <div>It's not a dream, it's the technology of today</div>
+              <div>MICROVISIONCHAIN MAKES EVERYDAY SPENDING AFFORDABLE,</div>
+              <div>ON-CHAIN AND TRANSACTIONS WITH NEAR-ZERO FEES.</div>
             </div>
           </div>
         </div>
         <div className="container flex flex-wrap md:flex-nowrap shadow-lg rounded-lg overflow-hidden">
-          <div className="border box-border border-solid border-[#3D3D3D] h-[30rem] w-full md:w-3/5 p-4 mb-4 md:mb-0 md:mr-4">
+          <div className="border box-border border-solid border-[#3D3D3D] h-[30rem] w-full md:w-3/5 p-8 mb-4 md:mb-0 md:mr-4">
             <div className="flex items-center mb-8">
               <img src={logo} alt="" className="w-[4.5rem] h-[4.5rem] mr-4" />
               <div>
@@ -1016,20 +1025,15 @@ function App() {
             </div>
             <div className="text-[#86888B] text-lg">
               <div className="mb-4">
-                We apologize for any frequent confusion among MVCer. Let us
-                repeat
+                What are the goals of MicroVisionChain?
               </div>
+              <div className="mb-4">1. The blockchain that WEB3 deserves</div>
               <div className="mb-4">
-                1) A million users is not our ambition, a billion is
+                2. The home for BTCFi & BTC micropayments for day-to-day
+                spending.
               </div>
-              <div className="mb-4">
-                2) The only limitation on MVC is imagination
-              </div>
-              <div className="mb-4">
-                3) We will make Bitcoin micro payment friendly in both
-                e-commerce and daily lives
-              </div>
-              <div>4) We build first talk second</div>
+              <div className="mb-4">3. $SPACEisDiscovery</div>
+              <div>4. Code first</div>
             </div>
           </div>
 
@@ -1052,13 +1056,13 @@ function App() {
             />
             <div>
               <div>
-                We are proud to present MVC BVM (Bitcoin Vitual Machine) to the
+                WE ARE PROUD TO PRESENT MVC BVM (BITCOIN VITUAL MACHINE) TO THE
               </div>
               <div>
-                world, proving that Bitcoin is programmable with code and able
-                to
+                WORLD, PROVING THAT BITCOIN IS PROGRAMMABLE WITH CODE AND ABLE
+                TO
               </div>
-              <div>run UTXO turning-completed smart contracts.</div>
+              <div>RUN UTXO TURNING-COMPLETED SMART CONTRACTS.</div>
             </div>
           </div>
         </div>
@@ -1102,10 +1106,13 @@ function App() {
             />
             <div>
               <div>
-                SPACE is MVC's network gas, native to the MicrovisionChain.
+              $SPACE IS OUT NATIVE GAS TOKEN. IT’S OBTAINED VIA PROOF-OF-
               </div>
               <div>
-                It is acquired through POW and is not an investment vehicle.
+              WORK OR PROOF-OF-BUILD. $SPACE IS VALUABLE AS A GAS TOKEN AND
+              </div>
+              <div>
+              THEREFORE SHOULD NOT BE SEEN AS A PRICE SPECULATIVE ASSET.
               </div>
             </div>
           </div>
