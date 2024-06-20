@@ -389,7 +389,7 @@ function App() {
           id="navbar"
         >
           <div className="container h-12 mx-auto flex items-center justify-between">
-            <div className="flex-shrink-0 flex">
+            <div className="flex-shrink-0 flex items-end">
               <img src={mainLogo} alt="Main Logo" className="w-[95px] h-[26px]" />
               {/* preview  */}
               <div className="ml-1 text-xs bg-sky-500/80 text-sky-50 px-2 rounded-full py-px italic shadow-md shadow-sky-500/50">
@@ -1090,7 +1090,7 @@ function App() {
                   <div>Category</div>
                 </div>
                 <div className="text-xl 2xl:text-2xl font-bold leading-tight">
-                  Microvisionchain announce MVC-20: The first protocol for free-minting assets on the bitcoin sidechain
+                  MicrovisionChain announce MVC-20: The first protocol for free-minting assets on the bitcoin sidechain
                 </div>
                 <div
                   className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
