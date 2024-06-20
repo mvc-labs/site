@@ -447,7 +447,7 @@ function App() {
                             className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
                             href="#"
                           >
-                            <p className=" text-white">· Roadmap</p>
+                            <p className=" text-white">· Timeline</p>
                           </a>
                           <a
                             className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
