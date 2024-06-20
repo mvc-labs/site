@@ -390,13 +390,11 @@ function App() {
         >
           <div className="container h-12 mx-auto flex items-center justify-between">
             <div className="flex-shrink-0 flex">
-              <img
-                src={mainLogo}
-                alt="Main Logo"
-                className="w-[95px] h-[26px]"
-              />
+              <img src={mainLogo} alt="Main Logo" className="w-[95px] h-[26px]" />
               {/* preview  */}
-              <div className="ml-4 text-[12px]">@preview</div>
+              <div className="ml-1 text-xs bg-sky-500/80 text-sky-50 px-2 rounded-full py-px italic shadow-md shadow-sky-500/50">
+                PREVIEW
+              </div>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:text-center lg:ml-16">
               {/* <Menu
@@ -432,35 +430,20 @@ function App() {
                         className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
                       >
                         <div className="p-3">
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· What is UTXO?</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Why MVC?</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Roadmap</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Founder</p>
                           </a>
 
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· FAQ</p>
                           </a>
                         </div>
@@ -491,41 +474,23 @@ function App() {
                         className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
                       >
                         <div className="p-3">
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· BVM</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· MetaTXID</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· MetaContract</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· MetaID</p>
                           </a>
 
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Zero-Confirmation</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Technical Doc</p>
                           </a>
                         </div>
@@ -556,16 +521,10 @@ function App() {
                         className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
                       >
                         <div className="p-3">
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Why Build on MVC?</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Builder Grant</p>
                           </a>
                         </div>
@@ -596,22 +555,13 @@ function App() {
                         className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
                       >
                         <div className="p-3">
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Mine SPACE</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Tokenomic</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Mine SPACE</p>
                           </a>
                         </div>
@@ -650,16 +600,10 @@ function App() {
                         className="divide-y divide-white/5 rounded-xl text-sm/6 [--anchor-gap:var(--spacing-5)] bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-menu-img"
                       >
                         <div className="p-3">
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Bridge to Bitcoin</p>
                           </a>
-                          <a
-                            className="block rounded-lg py-2 px-3 transition hover:bg-white/5"
-                            href="#"
-                          >
+                          <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
                             <p className=" text-white">· Bridge to EVM</p>
                           </a>
                         </div>
@@ -681,26 +625,16 @@ function App() {
               />
             </div>
             <div className="flex-shrink-0 flex items-center cursor-pointer lg:hidden">
-              <img
-                src={arrowIcon}
-                alt="Arrow Icon"
-                className="w-6 h-6"
-                onClick={toggleMenu}
-              />
+              <img src={arrowIcon} alt="Arrow Icon" className="w-6 h-6" onClick={toggleMenu} />
             </div>
 
             <div
               ref={menuContainerRef}
               className={`fixed backdrop-blur top-0 left-0 w-full bg-black bg-opacity-75 text-white transform ${
-                isOpen ? "translate-y-0" : "-translate-y-full"
+                isOpen ? 'translate-y-0' : '-translate-y-full'
               } transition-transform duration-500 ease-in-out`}
             >
-              <Menu
-                onClick={onClick}
-                selectedKeys={[current]}
-                items={items}
-                mode="inline"
-              />
+              <Menu onClick={onClick} selectedKeys={[current]} items={items} mode="inline" />
             </div>
           </div>
         </div>
@@ -720,15 +654,9 @@ function App() {
               for Web3
             </div> */}
 
-            <div className="text-sm font-normal">
-              AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC
-            </div>
-            <div className="text-sm font-normal">
-              UNLOCKS BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND
-            </div>
-            <div className="text-sm font-normal mb-4 xl2:mb-8">
-              WEB3 APPLICATIONS.
-            </div>
+            <div className="text-sm font-normal">AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC</div>
+            <div className="text-sm font-normal">UNLOCKS BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND</div>
+            <div className="text-sm font-normal mb-4 xl2:mb-8">WEB3 APPLICATIONS.</div>
 
             {/* <div className="text-xl inline-flex items-center group cursor-pointer 2xl:mb-8">
               <div className="text-base font-bold mr-6 lg:text-[22px] transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
@@ -755,9 +683,7 @@ function App() {
             <div className="flex flex-col sm:flex-row mt-8 mb-8 lg:mt-0 lg:mb-0 items-center w-full lg:justify-end">
               <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mr-6 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
                 <img src={Icon5} alt="" className="w-16 h-16 mb-6" />
-                <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
-                  SCALING BITCOIN
-                </div>
+                <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">SCALING BITCOIN</div>
 
                 <div className="absolute group bottom-4 right-4 inline-flex cursor-pointer items-center">
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
@@ -790,9 +716,7 @@ function App() {
 
               <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 lg:mr-6 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
                 <img src={Icon6} alt="" className="w-16 h-16 mb-6" />
-                <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
-                  ONBOARD WEB3
-                </div>
+                <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">ONBOARD WEB3</div>
                 <div className="absolute group bottom-4 right-4 inline-flex cursor-pointer items-center">
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
@@ -822,9 +746,7 @@ function App() {
               </div> */}
               <div className="w-full sm:w-[32%] cursor-pointer p-4 h-56 bg-no-repeat lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52  2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
                 <img src={Icon7} alt="" className="w-16 h-16 mb-6" />
-                <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
-                  BUILD TOGETHER
-                </div>
+                <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">BUILD TOGETHER</div>
                 <div className="absolute group bottom-4 right-4 inline-flex cursor-pointer items-center">
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
@@ -900,41 +822,27 @@ function App() {
             </div>
           </div>
           <div className="hidden lg:block lg:bottom-2 absolute ab-center 2xl:bottom-7">
-            <img
-              src={Scroll}
-              alt=""
-              onClick={scrollToSecondScreen}
-              className="cursor-pointer"
-            />
+            <img src={Scroll} alt="" onClick={scrollToSecondScreen} className="cursor-pointer" />
           </div>
         </div>
 
         <div className="container" ref={secondScreenRef}>
           <div className="mb-12">
-            <div
-              ref={textRef1}
-              className="text-left text-subtitle mb-8 xl2:leading-none 2xl:mb-32"
-            >
+            <div ref={textRef1} className="text-left text-subtitle mb-8 xl2:leading-none 2xl:mb-32">
               <div>A UTXO model blockchain</div>
-              <div>built for <span className="text-gradient">8 billion</span></div>
+              <div>
+                built for <span className="text-gradient">8 billion</span>
+              </div>
               <div>users in mind.</div>
             </div>
             <div ref={imgRef} className="flex justify-center">
-              <img
-                src={colorRang}
-                alt=""
-                className="img-center w-8 md:w-16 xl:w-auto"
-              />
+              <img src={colorRang} alt="" className="img-center w-8 md:w-16 xl:w-auto" />
             </div>
             <div ref={textRef2} className="text-right text-subtitle">
               <div>1:1 Satoshi Mapping makes</div>
               <div>our blockchain the ideal</div>
               <div className="inline-flex items-baseline">
-                <img
-                  src={Icon3}
-                  alt=""
-                  className="self-center w-6 h-6 lg:w-12 lg:h-12 rounded-full mr-4"
-                />
+                <img src={Icon3} alt="" className="self-center w-6 h-6 lg:w-12 lg:h-12 rounded-full mr-4" />
                 BTC scaling solution.
               </div>
             </div>
@@ -958,8 +866,7 @@ function App() {
               <div className="text-subhead mb-4 font-bold">KNOWLEDGE BASE</div>
               <div>
                 <div className="text-sm text-[#86888B]">
-                  Discover the unique background and compelling advantages of
-                  MVC.
+                  Discover the unique background and compelling advantages of MVC.
                 </div>
               </div>
               <div className="flex items-center absolute right-7 bottom-7 group cursor-pointer">
@@ -979,8 +886,7 @@ function App() {
               <div className="text-subhead mb-4 font-bold">PROOF-OF-WORK</div>
               <div>
                 <div className="text-sm text-[#86888B]">
-                  $SPACE, our native gas token, is mined using the SHA-256
-                  algorithm; popularised by Bitcoin.
+                  $SPACE, our native gas token, is mined using the SHA-256 algorithm; popularised by Bitcoin.
                 </div>
               </div>
               <div className="flex items-center absolute right-7 bottom-7 group cursor-pointer">
@@ -997,9 +903,7 @@ function App() {
             <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <img src={Icon10} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead mb-4 font-bold">Why MVC</div>
-              <div className="text-sm text-[#86888B]">
-                The Revolutionary Sidechain of Bitcoin
-              </div>
+              <div className="text-sm text-[#86888B]">The Revolutionary Sidechain of Bitcoin</div>
               <div className="flex items-center absolute right-7 bottom-7 group cursor-pointer">
                 <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                   Read more
@@ -1019,11 +923,7 @@ function App() {
               <div>Bitcoin</div>
               <div className="text-gradient">Micropayment</div>
             </div>
-            <img
-              src={rang}
-              alt=""
-              className="w-8 my-4 md:my-0 md:w-16 xl:w-auto"
-            />
+            <img src={rang} alt="" className="w-8 my-4 md:my-0 md:w-16 xl:w-auto" />
             <div>
               <div>MICROVISIONCHAIN MAKES EVERYDAY SPENDING AFFORDABLE,</div>
               <div>ON-CHAIN AND TRANSACTIONS WITH NEAR-ZERO FEES.</div>
@@ -1040,14 +940,9 @@ function App() {
               </div>
             </div>
             <div className="text-[#86888B] text-lg">
-              <div className="mb-4">
-                What are the goals of MicroVisionChain?
-              </div>
+              <div className="mb-4">What are the goals of MicroVisionChain?</div>
               <div className="mb-4">1. The blockchain that WEB3 deserves</div>
-              <div className="mb-4">
-                2. The home for BTCFi & BTC micropayments for day-to-day
-                spending.
-              </div>
+              <div className="mb-4">2. The home for BTCFi & BTC micropayments for day-to-day spending.</div>
               <div className="mb-4">3. $SPACEisDiscovery</div>
               <div>4. Code first</div>
             </div>
@@ -1065,19 +960,10 @@ function App() {
                 <span className="text-gradient">BVM</span> Era
               </div>
             </div>
-            <img
-              src={rang}
-              alt=""
-              className="w-8 my-4 md:my-0 md:w-16 xl:w-auto"
-            />
+            <img src={rang} alt="" className="w-8 my-4 md:my-0 md:w-16 xl:w-auto" />
             <div>
-              <div>
-                WE ARE PROUD TO PRESENT MVC BVM (BITCOIN VITUAL MACHINE) TO THE
-              </div>
-              <div>
-                WORLD, PROVING THAT BITCOIN IS PROGRAMMABLE WITH CODE AND ABLE
-                TO
-              </div>
+              <div>WE ARE PROUD TO PRESENT MVC BVM (BITCOIN VITUAL MACHINE) TO THE</div>
+              <div>WORLD, PROVING THAT BITCOIN IS PROGRAMMABLE WITH CODE AND ABLE TO</div>
               <div>RUN UTXO TURNING-COMPLETED SMART CONTRACTS.</div>
             </div>
           </div>
@@ -1090,9 +976,7 @@ function App() {
         <div className="container text-center">
           <div className="text-subtitle">The Ultimate Bitcoin</div>
           <div className="text-subtitle">Scaling Solution</div>
-          <div className=" font-bold text-gradient mb-16 text-3xl md:text-3xl lg:text-4xl xl:text-[5rem]">
-            100 MVC
-          </div>
+          <div className=" font-bold text-gradient mb-16 text-3xl md:text-3xl lg:text-4xl xl:text-[5rem]">100 MVC</div>
         </div>
         <div className="container container flex justify-center w-full items-center">
           <img src={bg3} alt="" className="max-h-full max-w-full" />
@@ -1115,21 +999,11 @@ function App() {
               </div>
               <div>SPACE</div>
             </div>
-            <img
-              src={rang}
-              alt=""
-              className="w-8 my-4 md:my-0 md:w-16 xl:w-auto"
-            />
+            <img src={rang} alt="" className="w-8 my-4 md:my-0 md:w-16 xl:w-auto" />
             <div>
-              <div>
-                $SPACE IS OUT NATIVE GAS TOKEN. IT’S OBTAINED VIA PROOF-OF-
-              </div>
-              <div>
-                WORK OR PROOF-OF-BUILD. $SPACE IS VALUABLE AS A GAS TOKEN AND
-              </div>
-              <div>
-                THEREFORE SHOULD NOT BE SEEN AS A PRICE SPECULATIVE ASSET.
-              </div>
+              <div>$SPACE IS OUT NATIVE GAS TOKEN. IT’S OBTAINED VIA PROOF-OF-</div>
+              <div>WORK OR PROOF-OF-BUILD. $SPACE IS VALUABLE AS A GAS TOKEN AND</div>
+              <div>THEREFORE SHOULD NOT BE SEEN AS A PRICE SPECULATIVE ASSET.</div>
             </div>
           </div>
         </div>
@@ -1152,11 +1026,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="cursor-pointer box-border flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <div className="flex-shrink-0">
-                <img
-                  src={Imagecontainer1}
-                  alt=""
-                  className="w-full h-60 object-cover"
-                />
+                <img src={Imagecontainer1} alt="" className="w-full h-60 object-cover" />
               </div>
               <div className="box-border p-4 border-solid border-[#3D3D3D] border-x border-b h-64 relative">
                 <div className="text-[#86888B] flex justify-between text-base mb-6">
@@ -1164,12 +1034,11 @@ function App() {
                   <div>Category</div>
                 </div>
                 <div className="text-xl 2xl:text-2xl font-bold leading-tight">
-                  Developers of Bitcoin sidechain MVC prepare for BRC-20 DEX
-                  launch
+                  Developers of Bitcoin sidechain MVC prepare for BRC-20 DEX launch
                 </div>
                 <div
                   className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  onClick={() => handleReadMoreClick("1")}
+                  onClick={() => handleReadMoreClick('1')}
                 >
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
@@ -1185,11 +1054,7 @@ function App() {
 
             <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <div className="flex-shrink-0">
-                <img
-                  src={Imagecontainer2}
-                  alt=""
-                  className="w-full h-60 object-cover"
-                />
+                <img src={Imagecontainer2} alt="" className="w-full h-60 object-cover" />
               </div>
               <div className="box-border p-4 border-solid border-[#3D3D3D] border-x border-b h-64 relative">
                 <div className="text-[#86888B] flex justify-between text-base mb-6">
@@ -1197,12 +1062,11 @@ function App() {
                   <div>Category</div>
                 </div>
                 <div className="text-xl 2xl:text-2xl font-bold leading-tight">
-                  F2Pool supports Bitcoin sidechain MicrovisionChain (Token
-                  SPACE) mining
+                  F2Pool supports Bitcoin sidechain MicrovisionChain (Token SPACE) mining
                 </div>
                 <div
                   className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  onClick={() => handleReadMoreClick("2")}
+                  onClick={() => handleReadMoreClick('2')}
                 >
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
@@ -1218,11 +1082,7 @@ function App() {
 
             <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
               <div className="flex-shrink-0">
-                <img
-                  src={Imagecontainer3}
-                  alt=""
-                  className="w-full h-60 object-cover"
-                />
+                <img src={Imagecontainer3} alt="" className="w-full h-60 object-cover" />
               </div>
               <div className="box-border p-4 border-solid border-[#3D3D3D] border-x border-b h-64 relative">
                 <div className="text-[#86888B] flex justify-between text-base mb-6">
@@ -1230,12 +1090,11 @@ function App() {
                   <div>Category</div>
                 </div>
                 <div className="text-xl 2xl:text-2xl font-bold leading-tight">
-                  Microvisionchain announce MVC-20: The first protocol for
-                  free-minting assets on the bitcoin sidechain
+                  Microvisionchain announce MVC-20: The first protocol for free-minting assets on the bitcoin sidechain
                 </div>
                 <div
                   className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  onClick={() => handleReadMoreClick("3")}
+                  onClick={() => handleReadMoreClick('3')}
                 >
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
@@ -1334,11 +1193,7 @@ function App() {
           </div> */}
 
           {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden"> */}
-          <InfiniteMovingCards
-            items={testimonials}
-            direction="right"
-            speed="slow"
-          />
+          <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
           {/* </div> */}
         </div>
 
@@ -1441,30 +1296,10 @@ function App() {
               <img src={mainLogo} alt="" className="w-[80px] h-[22px]" />
             </div>
             <div className="flex items-center box-border border-l border-solid border-[#3D3D3D] pl-8">
-              <img
-                src={Icon11}
-                alt=""
-                className="w-6 h-6 cursor-pointer"
-                onClick={() => handleBottomClick("1")}
-              />
-              <img
-                src={Icon12}
-                alt=""
-                className="w-6 h-6 ml-8 cursor-pointer"
-                onClick={() => handleBottomClick("2")}
-              />
-              <img
-                src={Icon13}
-                alt=""
-                className="w-6 h-6 ml-8 cursor-pointer"
-                onClick={() => handleBottomClick("3")}
-              />
-              <img
-                src={Icon14}
-                alt=""
-                className="w-6 h-6 ml-8 cursor-pointer"
-                onClick={() => handleBottomClick("4")}
-              />
+              <img src={Icon11} alt="" className="w-6 h-6 cursor-pointer" onClick={() => handleBottomClick('1')} />
+              <img src={Icon12} alt="" className="w-6 h-6 ml-8 cursor-pointer" onClick={() => handleBottomClick('2')} />
+              <img src={Icon13} alt="" className="w-6 h-6 ml-8 cursor-pointer" onClick={() => handleBottomClick('3')} />
+              <img src={Icon14} alt="" className="w-6 h-6 ml-8 cursor-pointer" onClick={() => handleBottomClick('4')} />
             </div>
           </div>
         </div>
@@ -1473,7 +1308,7 @@ function App() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 export default App;
