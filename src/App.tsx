@@ -59,59 +59,75 @@ import iconArrow from "../src/assets/Icon4.png";
 const testimonials = [
   {
     iconIndex: "1",
-    name: "sCrypt",
+    name: "ANTPOOL",
   },
   {
     iconIndex: "2",
-    name: "Bitget",
+    name: "BitMart",
   },
   {
     iconIndex: "3",
-    name: "Gate.io",
-  },
-  {
-    iconIndex: "4",
-    name: "CoinW",
-  },
-  {
-    iconIndex: "5",
-    name: "Bitroo",
-  },
-  {
-    iconIndex: "6",
-    name: "uniport",
-  },
-  {
-    iconIndex: "7",
-    name: "Bitmart",
-  },
-  {
-    iconIndex: "8",
-    name: "Coinmarketcap",
-  },
-  {
-    iconIndex: "9",
     name: "BingX",
   },
   {
+    iconIndex: "4",
+    name: "Bitget",
+  },
+  {
+    iconIndex: "5",
+    name: "BITROO",
+  },
+  {
+    iconIndex: "6",
+    name: "BVM",
+  },
+  {
+    iconIndex: "7",
+    name: "Certik",
+  },
+  {
+    iconIndex: "8",
+    name: "CoinGecko",
+  },
+  {
+    iconIndex: "9",
+    name: "CoinMarketCap",
+  },
+  {
     iconIndex: "10",
-    name: "mexc",
+    name: "CoinW",
   },
   {
     iconIndex: "11",
-    name: "VisionMoney",
+    name: "Fish_Pool",
   },
   {
     iconIndex: "12",
-    name: "XT",
+    name: "Gate.io",
   },
   {
     iconIndex: "13",
-    name: "RocketX",
+    name: "Mexc",
   },
   {
     iconIndex: "14",
-    name: "BVM",
+    name: "RocketX",
+  },
+  {
+    iconIndex: "15",
+    name: "sCrypt",
+  },
+  {
+    iconIndex: "16",
+    name: "Uniport",
+  },
+  {
+    iconIndex: "17",
+    name: "VisionMoney",
+  },
+  {
+    iconIndex: "18",
+    name: "Xt",
   },
 ];
 
