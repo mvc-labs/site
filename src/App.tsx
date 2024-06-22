@@ -1183,7 +1183,7 @@ function App() {
             />
             <div>
               <div>
-                $SPACE IS OUR NATIVE GAS TOKEN. IT’S OBTAINED VIA PROOF-OF-
+                $SPACE IS OUR NATIVE GAS. IT’S OBTAINED VIA PROOF-OF-
               </div>
               <div>WORK OR PROOF-OF-BUILD. $SPACE IS VALUABLE AS A GAS AND</div>
               <div>
