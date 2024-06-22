@@ -1075,6 +1075,7 @@ function App() {
           <div className="border box-border border-solid border-[#3D3D3D] p-4 h-[30rem] w-full md:w-2/5">
             <img src={videoBg} alt="" className="h-full" />
           </div> */}
+          {/* //new */}
           <div className="flex items-center justify-between md:mb-4">
             <div className="flex items-center mb-4 md:mb-0">
               <img
