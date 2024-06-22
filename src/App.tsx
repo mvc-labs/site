@@ -29,6 +29,7 @@ import videoBg from "../src/assets/videobg1.png";
 import bg2 from "../src/assets/bg2.png";
 import bg3 from "../src/assets/bg3.png";
 import bg4 from "../src/assets/bg4.png";
+import bg5 from "../src/assets/bg5.png";
 import Imagecontainer1 from "../src/assets/Imagecontainer1.png";
 import Imagecontainer2 from "../src/assets/Imagecontainer2.png";
 import Imagecontainer3 from "../src/assets/Imagecontainer3.png";
@@ -996,8 +997,8 @@ function App() {
               <div className="text-subhead mb-4 font-bold">PROOF-OF-WORK</div>
               <div>
                 <div className="text-sm text-[#86888B]">
-                  $SPACE, our native gas, is mined using the SHA-256
-                  algorithm; popularised by Bitcoin.
+                  $SPACE, our native gas, is mined using the SHA-256 algorithm;
+                  popularised by Bitcoin.
                 </div>
               </div>
               <div className="flex items-center absolute right-7 bottom-7 group cursor-pointer">
@@ -1030,7 +1031,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="container mb-28">
+        <div className="container mb-20">
           <div className="flex py-8 flex-col box-border border-solid border-[#3D3D3D] border-y md:flex-row md:items-center justify-between md:py-16">
             <div className="text-subtitle">
               <div>Bitcoin</div>
@@ -1047,8 +1048,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="container flex flex-wrap md:flex-nowrap shadow-lg rounded-lg overflow-hidden">
-          <div className="border box-border border-solid border-[#3D3D3D] h-[30rem] w-full md:w-3/5 p-8 mb-4 md:mb-0 md:mr-4">
+        <div className="container relative">
+          {/* <div className="container flex flex-wrap md:flex-nowrap shadow-lg rounded-lg overflow-hidden"> */}
+          {/* <div className="border box-border border-solid border-[#3D3D3D] h-[30rem] w-full md:w-3/5 p-8 mb-4 md:mb-0 md:mr-4">
             <div className="flex items-center mb-8">
               <img src={logo} alt="" className="w-[4.5rem] h-[4.5rem] mr-4" />
               <div>
@@ -1072,9 +1074,51 @@ function App() {
 
           <div className="border box-border border-solid border-[#3D3D3D] p-4 h-[30rem] w-full md:w-2/5">
             <img src={videoBg} alt="" className="h-full" />
+          </div> */}
+          <div className="flex items-center justify-between md:mb-4">
+            <div className="flex items-center mb-4 md:mb-0">
+              <img
+                src={mainLogo}
+                alt="Main Logo"
+                className="w-[75px] h-[20px] md:w-[150px] md:h-[41px]"
+              />
+              <div className="font-bold ml-6 text-lg md:text-3xl lg:text-4xl xl2:text-[48px]">
+                The Blockchain For Web3
+              </div>
+            </div>
+            <div className="group cursor-pointer hidden md:block">
+              <img
+                src={Icon2}
+                alt=""
+                className="w-7 h-7 transition-filter duration-500 ease-in-out group-hover:brightness-125 group-hover:contrast-150"
+              />
+            </div>
+          </div>
+
+          <div className="text-base font-normal lg:text-[24px] xl2:text-[30px] mb-2">
+            The Blockchain for Web3 Massive Application
+          </div>
+          <div className="md:flex md:justify-between md:items-end">
+            <div className="text-base text-[#86888B] mt-4 mb-4 md:mb-0">
+              <div className="mb-1">Empower digital life, and every kind of digital asset.</div>
+              <div>
+                MVC is reinventing the original Bitcoin design and bringing up a
+                revolutionary
+              </div>
+            </div>
+            <div className="text-right leading-none">
+              <div className="text-base lg:text-[22px] xl2:text-2xl font-bold">Layer 1 Scaling Solution</div>
+              <div className="text-base text-gradient lg:text-[22px] xl2:text-2xl font-bold mt-2 md:mt-6">
+                Genesis Block Launched on 26 Jan 2023
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center w-full items-center mt-10">
+            <img src={bg5} alt="" className="max-h-full max-w-full" />
           </div>
         </div>
-        <div className="container mb-28 mt-24 lg:mt-48">
+        <div className="container mb-28 mt-24 lg:mt-36">
           <div className="flex py-8 flex-col box-border border-solid border-[#3D3D3D] border-y md:flex-row md:items-center justify-between md:py-16">
             <div className="text-subtitle">
               <div>Entering the</div>
