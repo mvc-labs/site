@@ -24,8 +24,6 @@ import Icon2 from "../src/assets/Icon2.png";
 import Scroll from "../src/assets/scroll.png";
 import rang from "../src/assets/rang.png";
 import colorRang from "../src/assets/colorrang.png";
-import logo from "../src/assets/logo.png";
-import videoBg from "../src/assets/videobg1.png";
 import bg2 from "../src/assets/bg2.png";
 import bg3 from "../src/assets/bg3.png";
 import bg4 from "../src/assets/bg4.png";
