@@ -94,7 +94,7 @@ export const InfiniteMovingCards = ({
                   <img
                     src={`./Partnerslogo${item.iconIndex}.png`}
                     alt=""
-                    className="w-14 h-14 mb-2"
+                    className="w-16 h-16"
                   />
                   <div className="text-center text-[#7C7C7C]">{item.name}</div>
               </div>
