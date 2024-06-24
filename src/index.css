@@ -94,20 +94,8 @@
   background-repeat: repeat; 
   background-size:100%;
   background-position:top;
-  /* background-repeat: repeat, no-repeat; 
-  /* background-size: cover, auto;
-  /* background-position: top, bottom; 
-  }
-  .bg-bottom-auto {
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
-  .bg-custom-img {
-    background-image: url('/src/assets/Ellipse.png'); 
-    /* bacxkground-position: bottom; */
-  }
   .bg-menu-img {
     background: url('/src/assets/cornergradient.png') no-repeat bottom;
     
@@ -155,5 +143,9 @@
   }
   .ant-menu-submenu-title{
     color: #fff!important;
+  }
+  .bg-custom-img {
+    background-image: url('/src/assets/Ellipse.png'); 
+    /* bacxkground-position: bottom; */
   }
 
