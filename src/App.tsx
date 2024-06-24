@@ -1094,19 +1094,23 @@ function App() {
             </div>
           </div>
 
-          <div className="text-base font-normal lg:text-[24px] xl2:text-[30px] mb-2">
-            The Blockchain for Web3 Massive Application
-          </div>
           <div className="md:flex md:justify-between md:items-end">
-            <div className="text-base text-[#86888B] mt-4 mb-4 md:mb-0">
-              <div className="mb-1">Empower digital life, and every kind of digital asset.</div>
-              <div>
+            <div className="mt-4 mb-4 md:mb-0">
+              <div className="text-base font-normal lg:text-[24px] xl2:text-[30px] mb-1">
+                The Blockchain for Web3 Massive Application
+              </div>
+              <div className="mb-1 text-base text-[#86888B]">
+                Empower digital life, and every kind of digital asset.
+              </div>
+              <div className="text-base text-[#86888B]">
                 MVC is reinventing the original Bitcoin design and bringing up a
                 revolutionary
               </div>
             </div>
             <div className="text-right leading-none">
-              <div className="text-base lg:text-[22px] xl2:text-2xl font-bold">Layer 1 Scaling Solution</div>
+              <div className="text-base lg:text-[22px] xl2:text-2xl font-bold">
+                Layer 1 Scaling Solution
+              </div>
               <div className="text-base text-gradient lg:text-[22px] xl2:text-2xl font-bold mt-2 md:mt-6">
                 Genesis Block Launched on 26 Jan 2023
               </div>
@@ -1181,9 +1185,7 @@ function App() {
               className="w-8 my-4 md:my-0 md:w-16 xl:w-auto"
             />
             <div>
-              <div>
-                $SPACE IS OUR NATIVE GAS. IT’S OBTAINED VIA PROOF-OF-
-              </div>
+              <div>$SPACE IS OUR NATIVE GAS. IT’S OBTAINED VIA PROOF-OF-</div>
               <div>WORK OR PROOF-OF-BUILD. $SPACE IS VALUABLE AS A GAS AND</div>
               <div>
                 THEREFORE SHOULD NOT BE SEEN AS A PRICE SPECULATIVE ASSET.
@@ -1192,7 +1194,7 @@ function App() {
           </div>
         </div>
         <div className="container">
-          <div className="box-border border-solid border-[#3D3D3D] border-b flex justify-center w-full items-center pb-28 mb-24 lg:mb-36">
+          <div className="box-border border-solid border-[#3D3D3D] border-b flex justify-center w-full items-center pb-28 mb-24 lg:mb-28">
             <img src={bg4} alt="" className="max-h-full max-w-full" />
           </div>
         </div>
