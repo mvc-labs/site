@@ -292,8 +292,7 @@ function App() {
   // });
   // ListItem.displayName = "ListItem";
 
-  const [messageApi, contextHolder] = message.useMessage();
-  const [showWarning, setShowWarning] = useState(false);
+
 
   const warning = () => {
     // message.warning('coming soon')
@@ -303,18 +302,6 @@ function App() {
       className:'notice-text'
     });
   };
-
-
-  useEffect(() => {
-    if (showWarning) {
-      messageApi.open({
-        type: 'warning',
-        content: 'This is a warning message',
-      });
-      // 显示消息后重置状态
-      setShowWarning(false);
-    }
-  }, [showWarning, messageApi]);
 
   useEffect(() => {
     const handleClick = (event: any) => {
