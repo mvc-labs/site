@@ -51,7 +51,7 @@ import {
 // import Imagecontainer4 from "../src/assets/Imagecontainer4.png";
 // import Imagecontainer5 from "../src/assets/Imagecontainer5.png";
 import type { MenuProps } from "antd";
-import { Menu } from "antd";
+import { Menu, message } from "antd";
 import iconArrow from "../src/assets/Icon4.png";
 // import iconArrowHover from "../src/assets/Icon4Hover.png";
 
@@ -291,6 +291,30 @@ function App() {
   //   );
   // });
   // ListItem.displayName = "ListItem";
+
+  const [messageApi, contextHolder] = message.useMessage();
+  const [showWarning, setShowWarning] = useState(false);
+
+  const warning = () => {
+    // message.warning('coming soon')
+    message.warning({
+      duration: 2,
+      content:'coming soon',
+      className:'notice-text'
+    });
+  };
+
+
+  useEffect(() => {
+    if (showWarning) {
+      messageApi.open({
+        type: 'warning',
+        content: 'This is a warning message',
+      });
+      // 显示消息后重置状态
+      setShowWarning(false);
+    }
+  }, [showWarning, messageApi]);
 
   useEffect(() => {
     const handleClick = (event: any) => {
@@ -685,7 +709,7 @@ function App() {
             </div>
 
             <div className="hidden lg:flex-shrink-0 lg:flex lg:items-center group cursor-pointer">
-              <div className="text-white mr-2 transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
+              <div className="text-white mr-2 transition-transform transform duration-500 ease-in-out group-hover:translate-x-1" onClick={warning}>
                 JOIN TO COMMUNITY
               </div>
               <img
@@ -755,7 +779,7 @@ function App() {
               />
             </div> */}
 
-            <div className="text-xl inline-flex items-center group cursor-pointer mb-[8px] xl2:mb-4 2xl:mb-8">
+            <div className="text-xl inline-flex items-center group cursor-pointer mb-[8px] xl2:mb-4 2xl:mb-8" onClick={warning}>
               <div className="text-base font-bold mr-4 lg:text-[22px] transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
                 GET STARTED
               </div>
@@ -767,7 +791,7 @@ function App() {
             </div>
 
             <div className="flex flex-col sm:flex-row mt-8 mb-8 lg:mt-0 lg:mb-0 items-center w-full lg:justify-end">
-              <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mr-6 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
+              <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mr-6 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300" onClick={warning}>
                 <img src={Icon5} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   SCALING BITCOIN
@@ -802,7 +826,7 @@ function App() {
                 </div>
               </div> */}
 
-              <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 lg:mr-6 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
+              <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 lg:mr-6 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300" onClick={warning}>
                 <img src={Icon6} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   ONBOARD WEB3
@@ -834,7 +858,7 @@ function App() {
                   />
                 </div>
               </div> */}
-              <div className="w-full sm:w-[32%] cursor-pointer p-4 h-56 bg-no-repeat lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52  2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300">
+              <div className="w-full sm:w-[32%] cursor-pointer p-4 h-56 bg-no-repeat lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52  2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300" onClick={warning}>
                 <img src={Icon7} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   BUILD TOGETHER
@@ -969,7 +993,7 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 mt-8 mb-24 lg:mb-48 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={warning}>
               <img src={Icon8} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead mb-4 font-bold">KNOWLEDGE BASE</div>
               <div>
@@ -989,7 +1013,7 @@ function App() {
                 />
               </div>
             </div>
-            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={warning}>
               <img src={Icon9} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead font-bold">DECENTRALIZED VIA</div>
               <div className="text-subhead mb-4 font-bold">PROOF-OF-WORK</div>
@@ -1010,7 +1034,7 @@ function App() {
                 />
               </div>
             </div>
-            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={warning}>
               <img src={Icon10} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead mb-4 font-bold">Why MVC</div>
               <div className="text-sm text-[#86888B]">
@@ -1161,7 +1185,7 @@ function App() {
         <div className="container container flex justify-center w-full items-center">
           <img src={bg3} alt="" className="max-h-full max-w-full" />
         </div>
-        <div className="container flex items-center justify-center mt-16 mb-20 lg:mb-40 group cursor-pointer">
+        <div className="container flex items-center justify-center mt-16 mb-20 lg:mb-40 group cursor-pointer" onClick={warning}>
           <div className="text-base font-bold mr-6 lg:text-3xl transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
             Build an MVC in 30 Min
           </div>
@@ -1210,7 +1234,7 @@ function App() {
 
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="cursor-pointer box-border flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer box-border flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={() => handleReadMoreClick("1")}>
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer1}
@@ -1229,7 +1253,7 @@ function App() {
                 </div>
                 <div
                   className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  onClick={() => handleReadMoreClick("1")}
+                  
                 >
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
@@ -1243,7 +1267,7 @@ function App() {
               </div>
             </div>
 
-            <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={() => handleReadMoreClick("2")}>
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer2}
@@ -1262,7 +1286,7 @@ function App() {
                 </div>
                 <div
                   className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  onClick={() => handleReadMoreClick("2")}
+                  
                 >
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
@@ -1276,7 +1300,7 @@ function App() {
               </div>
             </div>
 
-            <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300">
+            <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={() => handleReadMoreClick("3")}>
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer3}
@@ -1295,7 +1319,7 @@ function App() {
                 </div>
                 <div
                   className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  onClick={() => handleReadMoreClick("3")}
+                  
                 >
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
