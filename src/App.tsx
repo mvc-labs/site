@@ -733,10 +733,10 @@ function App() {
           <div className="container relative pt-20 lg:pt-[6rem] 2xl:pt-40">
             {/* <div className="container relative pt-20 lg:pt-[18vh]"> */}
             <div className="font-bold text-2xl md:text-3xl lg:text-4xl lg:leading-tight xl2:text-title">
-              The Blockchain
+              The Blockchain for
             </div>
             <div className="font-bold  text-2xl md:text-3xl lg:text-4xl lg:mb-4 lg:leading-tight xl2:text-title 2xl:mb-8">
-              for Web3
+              BTC and Web3
             </div>
             {/* <div className="font-bold text-2xl md:text-[4.1vw] leading-none">
               The Blockchain
@@ -942,7 +942,7 @@ function App() {
             >
               <div>A UTXO model blockchain</div>
               <div>
-                built for <span className="text-gradient">8 billion</span>
+                built to <span className="text-gradient">8 billion</span>
               </div>
               <div>users in mind.</div>
             </div>
@@ -1108,7 +1108,7 @@ function App() {
           <div className="md:flex md:justify-between md:items-end">
             <div className="mt-4 mb-4 md:mb-0">
               <div className="text-base font-normal lg:text-[24px] xl2:text-[30px] mb-1">
-                The Blockchain for Web3 Massive Application
+                The Blockchain for Web3 Massive Applications
               </div>
               <div className="mb-1 text-base text-[#86888B]">
                 Empower digital life, and every kind of digital asset.
@@ -1153,7 +1153,7 @@ function App() {
                 WORLD, PROVING THAT BITCOIN IS PROGRAMMABLE WITH CODE AND ABLE
                 TO
               </div>
-              <div>RUN UTXO TURNING-COMPLETED SMART CONTRACTS.</div>
+              <div>RUN UTXO TURING-COMPLETE SMART CONTRACTS.</div>
             </div>
           </div>
         </div>
@@ -1235,7 +1235,7 @@ function App() {
                   <div>Category</div>
                 </div>
                 <div className="text-xl 2xl:text-2xl font-bold leading-tight">
-                  Developers of Bitcoin sidechain MVC prepare for BRC-20 DEX
+                  Developers of Bitcoin sidechain MVC prepares for BRC-20 DEX
                   launch
                 </div>
                 <div
@@ -1301,7 +1301,7 @@ function App() {
                   <div>Category</div>
                 </div>
                 <div className="text-xl 2xl:text-2xl font-bold leading-tight">
-                  MicrovisionChain announce MVC-20: The first protocol for
+                  MicrovisionChain announces MVC-20: The first protocol for
                   free-minting assets on the bitcoin sidechain
                 </div>
                 <div
