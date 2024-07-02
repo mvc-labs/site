@@ -3,8 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import "./index.css";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import videoSrc from "../src/assets/video1.mp4";
-import posterSrc from "../src/assets/videobg2.png";
+import videoSrc from "../src/assets/video2.mp4";
+import posterSrc from "../src/assets/videobg2.jpg";
 import iconDefault from "../src/assets/Icon.png";
 import mainLogo from "../src/assets/mainlogo.png";
 import arrowIcon from "../src/assets/Menu-icon.png";
@@ -292,14 +292,12 @@ function App() {
   // });
   // ListItem.displayName = "ListItem";
 
-
-
   const warning = () => {
     // message.warning('coming soon')
     message.warning({
       duration: 2,
-      content:'coming soon',
-      className:'notice-text'
+      content: "coming soon",
+      className: "notice-text",
     });
   };
 
@@ -696,7 +694,10 @@ function App() {
             </div>
 
             <div className="hidden lg:flex-shrink-0 lg:flex lg:items-center group cursor-pointer">
-              <div className="text-white mr-2 transition-transform transform duration-500 ease-in-out group-hover:translate-x-1" onClick={warning}>
+              <div
+                className="text-white mr-2 transition-transform transform duration-500 ease-in-out group-hover:translate-x-1"
+                onClick={warning}
+              >
                 JOIN TO COMMUNITY
               </div>
               <img
@@ -744,17 +745,24 @@ function App() {
             <div className="font-bold mb-[1vw] text-[4.1vw] leading-none">
               for Web3
             </div> */}
-
-            <div className="text-sm font-normal">
-              AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC
+            <div className="block md:hidden mt-4">
+              <div className="text-sm font-normal">
+                AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC UNLOCKS
+                BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND WEB3
+                APPLICATIONS.
+              </div>
             </div>
-            <div className="text-sm font-normal">
-              UNLOCKS BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND
+            <div className="hidden md:block">
+              <div className="text-sm font-normal">
+                AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC
+              </div>
+              <div className="text-sm font-normal">
+                UNLOCKS BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND
+              </div>
+              <div className="text-sm font-normal mb-4 xl2:mb-8">
+                WEB3 APPLICATIONS.
+              </div>
             </div>
-            <div className="text-sm font-normal mb-4 xl2:mb-8">
-              WEB3 APPLICATIONS.
-            </div>
-
             {/* <div className="text-xl inline-flex items-center group cursor-pointer 2xl:mb-8">
               <div className="text-base font-bold mr-6 lg:text-[22px] transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
                 GET STARTED
@@ -766,7 +774,10 @@ function App() {
               />
             </div> */}
 
-            <div className="text-xl inline-flex items-center group cursor-pointer mb-[8px] xl2:mb-4 2xl:mb-8" onClick={warning}>
+            <div
+              className="text-xl inline-flex items-center group cursor-pointer mb-[8px] xl2:mb-4 2xl:mb-8"
+              onClick={warning}
+            >
               <div className="text-base font-bold mr-4 lg:text-[22px] transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
                 GET STARTED
               </div>
@@ -778,7 +789,10 @@ function App() {
             </div>
 
             <div className="flex flex-col sm:flex-row mt-8 mb-8 lg:mt-0 lg:mb-0 items-center w-full lg:justify-end">
-              <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mr-6 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300" onClick={warning}>
+              <div
+                className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mr-6 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300"
+                onClick={warning}
+              >
                 <img src={Icon5} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   SCALING BITCOIN
@@ -813,7 +827,10 @@ function App() {
                 </div>
               </div> */}
 
-              <div className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 lg:mr-6 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300" onClick={warning}>
+              <div
+                className="w-full sm:w-[32%] sm:mr-[2%] sm:mb-0 cursor-pointer p-4 h-56 bg-no-repeat mb-4 lg:mb-0 lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52 2xl:h-56 2xl:p-4 lg:mr-6 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300"
+                onClick={warning}
+              >
                 <img src={Icon6} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   ONBOARD WEB3
@@ -845,7 +862,10 @@ function App() {
                   />
                 </div>
               </div> */}
-              <div className="w-full sm:w-[32%] cursor-pointer p-4 h-56 bg-no-repeat lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52  2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300" onClick={warning}>
+              <div
+                className="w-full sm:w-[32%] cursor-pointer p-4 h-56 bg-no-repeat lg:p-2 lg:w-48 lg:h-44 xl:p-4 xl:h-48 xl2:w-52 xl2:h-52  2xl:h-56 2xl:p-4 2xl:w-60 bg-gradient-to-br from-black/50 to-black/25 backdrop-blur bg-custom-img border border-gray-700 rounded-bl-2xl relative hover:translate-x-2 transition duration-300"
+                onClick={warning}
+              >
                 <img src={Icon7} alt="" className="w-16 h-16 mb-6" />
                 <div className="mb-8 text-base 2xl:mb-12 2xl:text-xl">
                   BUILD TOGETHER
@@ -953,16 +973,33 @@ function App() {
                 className="img-center w-8 md:w-16 xl:w-auto"
               />
             </div>
-            <div ref={textRef2} className="text-right text-subtitle">
-              <div>1:1 Satoshi Mapping makes</div>
-              <div>our blockchain the ideal</div>
-              <div className="inline-flex items-baseline">
-                <img
-                  src={Icon3}
-                  alt=""
-                  className="self-center w-6 h-6 lg:w-12 lg:h-12 rounded-full mr-4"
-                />
-                BTC scaling solution.
+
+            <div ref={textRef2} className="text-right text-subtitle ">
+              <div className="block md:hidden">
+                <div>1:1 Satoshi Mapping</div>
+                <div> makes our blockchain </div>
+                <div className="inline-flex items-baseline">
+                  the ideal{" "}
+                  <img
+                    src={Icon3}
+                    alt=""
+                    className="self-center w-6 h-6 lg:w-12 lg:h-12 rounded-full mr-2 ml-2"
+                  />
+                  BTC
+                </div>
+                <div>scaling solution.</div>
+              </div>
+              <div className="hidden md:block">
+                <div>1:1 Satoshi Mapping makes</div>
+                <div>our blockchain the ideal</div>
+                <div className="inline-flex items-baseline">
+                  <img
+                    src={Icon3}
+                    alt=""
+                    className="self-center w-6 h-6 lg:w-12 lg:h-12 rounded-full mr-4"
+                  />
+                  BTC scaling solution.
+                </div>
               </div>
             </div>
           </div>
@@ -977,10 +1014,22 @@ function App() {
               <source src={videoSrc} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+
+            {/* <iframe
+              className="w-full h-[800px]"
+              src="https://www.youtube.com/embed/6U166vZyqUg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe> */}
           </div>
 
           <div className="grid grid-cols-1 mt-8 mb-24 lg:mb-48 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={warning}>
+            <div
+              className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300"
+              onClick={warning}
+            >
               <img src={Icon8} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead mb-4 font-bold">KNOWLEDGE BASE</div>
               <div>
@@ -1000,7 +1049,10 @@ function App() {
                 />
               </div>
             </div>
-            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={warning}>
+            <div
+              className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300"
+              onClick={warning}
+            >
               <img src={Icon9} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead font-bold">DECENTRALIZED VIA</div>
               <div className="text-subhead mb-4 font-bold">PROOF-OF-WORK</div>
@@ -1021,7 +1073,10 @@ function App() {
                 />
               </div>
             </div>
-            <div className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={warning}>
+            <div
+              className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300"
+              onClick={warning}
+            >
               <img src={Icon10} alt="" className="w-28 h-28 mb-8" />
               <div className="text-subhead mb-4 font-bold">Why MVC</div>
               <div className="text-sm text-[#86888B]">
@@ -1172,7 +1227,10 @@ function App() {
         <div className="container container flex justify-center w-full items-center">
           <img src={bg3} alt="" className="max-h-full max-w-full" />
         </div>
-        <div className="container flex items-center justify-center mt-16 mb-20 lg:mb-40 group cursor-pointer" onClick={warning}>
+        <div
+          className="container flex items-center justify-center mt-16 mb-20 lg:mb-40 group cursor-pointer"
+          onClick={warning}
+        >
           <div className="text-base font-bold mr-6 lg:text-3xl transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
             Build an MVC in 30 Min
           </div>
@@ -1221,7 +1279,10 @@ function App() {
 
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="cursor-pointer box-border flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={() => handleReadMoreClick("1")}>
+            <div
+              className="cursor-pointer box-border flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300"
+              onClick={() => handleReadMoreClick("1")}
+            >
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer1}
@@ -1238,10 +1299,7 @@ function App() {
                   Developers of Bitcoin sidechain MVC prepares for BRC-20 DEX
                   launch
                 </div>
-                <div
-                  className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  
-                >
+                <div className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer">
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
                   </div>
@@ -1254,7 +1312,10 @@ function App() {
               </div>
             </div>
 
-            <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={() => handleReadMoreClick("2")}>
+            <div
+              className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300"
+              onClick={() => handleReadMoreClick("2")}
+            >
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer2}
@@ -1271,10 +1332,7 @@ function App() {
                   F2Pool supports Bitcoin sidechain MicrovisionChain (Token
                   SPACE) mining
                 </div>
-                <div
-                  className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  
-                >
+                <div className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer">
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
                   </div>
@@ -1287,7 +1345,10 @@ function App() {
               </div>
             </div>
 
-            <div className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300" onClick={() => handleReadMoreClick("3")}>
+            <div
+              className="cursor-pointer flex flex-col shadow-md overflow-hidden rounded-tl-3xl hover:translate-x-2 transition duration-300"
+              onClick={() => handleReadMoreClick("3")}
+            >
               <div className="flex-shrink-0">
                 <img
                   src={Imagecontainer3}
@@ -1304,10 +1365,7 @@ function App() {
                   MicrovisionChain announces MVC-20: The first protocol for
                   free-minting assets on the bitcoin sidechain
                 </div>
-                <div
-                  className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer"
-                  
-                >
+                <div className="flex items-center text-lg absolute bottom-4 right-4 group cursor-pointer">
                   <div className="transition-colors duration-500 ease-in-out text-gray-400 group-hover:text-white text-lg">
                     Read more
                   </div>
