@@ -29,6 +29,7 @@ import bg3 from "../src/assets/bg3.png";
 import bg4 from "../src/assets/bg4.png";
 import bg5 from "../src/assets/bg5.png";
 import bg6 from "../src/assets/bg6.png";
+import bg7 from "../src/assets/bg7.png";
 import Imagecontainer1 from "../src/assets/Imagecontainer1.png";
 import Imagecontainer2 from "../src/assets/Imagecontainer2.png";
 import Imagecontainer3 from "../src/assets/Imagecontainer3.png";
@@ -746,7 +747,7 @@ function App() {
             <div className="font-bold mb-[1vw] text-[4.1vw] leading-none">
               for Web3
             </div> */}
-            <div className="block md:hidden mt-4">
+            <div className="block md:hidden mt-4 mb-4">
               <div className="text-sm font-normal">
                 AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC UNLOCKS
                 BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND WEB3
@@ -1032,7 +1033,7 @@ function App() {
               onClick={warning}
             >
               <img src={Icon8} alt="" className="w-28 h-28 mb-8" />
-              <div className="text-subhead mb-4 font-bold">KNOWLEDGE BASE</div>
+              <div className="text-[22px] md:text-subhead mb-4 font-bold">KNOWLEDGE BASE</div>
               <div>
                 <div className="text-sm text-[#86888B]">
                   Discover the unique background and compelling advantages of
@@ -1055,8 +1056,8 @@ function App() {
               onClick={warning}
             >
               <img src={Icon9} alt="" className="w-28 h-28 mb-8" />
-              <div className="text-subhead font-bold">DECENTRALIZED VIA</div>
-              <div className="text-subhead mb-4 font-bold">PROOF-OF-WORK</div>
+              <div className="text-[22px] md:text-subhead font-bold">DECENTRALIZED VIA</div>
+              <div className="text-[22px] md:text-subhead mb-4 font-bold">PROOF-OF-WORK</div>
               <div>
                 <div className="text-sm text-[#86888B]">
                   $SPACE, our native gas, is mined using the SHA-256 algorithm;
@@ -1079,7 +1080,7 @@ function App() {
               onClick={warning}
             >
               <img src={Icon10} alt="" className="w-28 h-28 mb-8" />
-              <div className="text-subhead mb-4 font-bold">Why MVC</div>
+              <div className="text-[22px] md:text-subhead mb-4 font-bold">Why MVC</div>
               <div className="text-sm text-[#86888B]">
                 The Revolutionary Sidechain of Bitcoin
               </div>
@@ -1273,8 +1274,9 @@ function App() {
           </div>
         </div>
         <div className="container">
-          <div className="box-border border-solid border-[#3D3D3D] border-b flex justify-center w-full items-center pb-28 mb-24 lg:mb-28">
-            <img src={bg4} alt="" className="max-h-full max-w-full" />
+          <div className="box-border border-solid border-[#3D3D3D] border-b flex justify-center w-full items-center pb-14 md:pb-28 mb-14 lg:mb-28">
+            <img src={bg4} alt="" className="max-h-full max-w-full hidden md:block" />
+            <img src={bg7} alt="" className="max-h-full max-w-full block md:hidden" />
           </div>
         </div>
         <div className="container flex justify-between mb-12">
@@ -1483,7 +1485,7 @@ function App() {
 
         <div className="container font-normal text-base mt-16">
           <div className="flex box-border border-solid border-[#3D3D3D] border-y py-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-24">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-24">
               <div className="flex flex-col space-y-2">
                 <div className="text-2xl font-bold">Learn</div>
                 <div className="space-y-1 text-[#86888B] text-base leading-7">
@@ -1576,10 +1578,10 @@ function App() {
 
         <div className="container">
           <div className=" h-12 box-border border-b border-solid border-[#3D3D3D] flex justify-between">
-            <div className="w-1/6 flex items-center justify-center box-border border-r border-solid border-[#3D3D3D]">
+            <div className="w-1/3 md:w-1/6 flex items-center justify-center box-border border-r border-solid border-[#3D3D3D]">
               <img src={mainLogo} alt="" className="w-[80px] h-[22px]" />
             </div>
-            <div className="flex items-center box-border border-l border-solid border-[#3D3D3D] pl-8">
+            <div className="flex items-center box-border border-l border-solid border-[#3D3D3D] pl-4 md:pl-8">
               <img
                 src={Icon11}
                 alt=""
@@ -1589,19 +1591,19 @@ function App() {
               <img
                 src={Icon12}
                 alt=""
-                className="w-6 h-6 ml-8 cursor-pointer"
+                className="w-6 h-6 ml-4 md:ml-8 cursor-pointer"
                 onClick={() => handleBottomClick("2")}
               />
               <img
                 src={Icon13}
                 alt=""
-                className="w-6 h-6 ml-8 cursor-pointer"
+                className="w-6 h-6 ml-4 md:ml-8 cursor-pointer"
                 onClick={() => handleBottomClick("3")}
               />
               <img
                 src={Icon14}
                 alt=""
-                className="w-6 h-6 ml-8 cursor-pointer"
+                className="w-6 h-6 ml-4 md:ml-8 cursor-pointer"
                 onClick={() => handleBottomClick("4")}
               />
             </div>
