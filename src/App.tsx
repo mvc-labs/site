@@ -28,6 +28,7 @@ import bg2 from "../src/assets/bg2.png";
 import bg3 from "../src/assets/bg3.png";
 import bg4 from "../src/assets/bg4.png";
 import bg5 from "../src/assets/bg5.png";
+import bg6 from "../src/assets/bg6.png";
 import Imagecontainer1 from "../src/assets/Imagecontainer1.png";
 import Imagecontainer2 from "../src/assets/Imagecontainer2.png";
 import Imagecontainer3 from "../src/assets/Imagecontainer3.png";
@@ -1184,7 +1185,16 @@ function App() {
           </div>
 
           <div className="flex justify-center w-full items-center mt-10">
-            <img src={bg5} alt="" className="max-h-full max-w-full" />
+            <img
+              src={bg5}
+              alt=""
+              className="max-h-full max-w-full hidden md:block"
+            />
+            <img
+              src={bg6}
+              alt=""
+              className="w-full block md:hidden"
+            />
           </div>
         </div>
         <div className="container mb-28 mt-24 lg:mt-36">
