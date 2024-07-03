@@ -735,10 +735,10 @@ function App() {
         <div className="lg:h-[100dvh] box-border bg-hero-pattern bg-no-repeat bg-center bg-contain relative">
           <div className="container relative pt-20 lg:pt-[6rem] 2xl:pt-40">
             {/* <div className="container relative pt-20 lg:pt-[18vh]"> */}
-            <div className="font-bold text-2xl md:text-3xl lg:text-4xl lg:leading-tight xl2:text-title">
+            <div className="font-bold leading-tight text-2xl md:text-3xl lg:text-4xl lg:leading-tight xl2:text-title">
               The Blockchain for
             </div>
-            <div className="font-bold  text-2xl md:text-3xl lg:text-4xl lg:mb-4 lg:leading-tight xl2:text-title 2xl:mb-8">
+            <div className="font-bold leading-tight text-2xl md:text-3xl lg:text-4xl lg:mb-4 lg:leading-tight xl2:text-title 2xl:mb-8">
               BTC and Web3
             </div>
             {/* <div className="font-bold text-2xl md:text-[4.1vw] leading-none">
@@ -747,7 +747,7 @@ function App() {
             <div className="font-bold mb-[1vw] text-[4.1vw] leading-none">
               for Web3
             </div> */}
-            <div className="block md:hidden mt-4 mb-4">
+            <div className="block md:hidden mt-4 mb-6">
               <div className="text-sm font-normal">
                 AS AN IDEAL BITCOIN SIDECHAIN WITH DID SOLUTIONS, MVC UNLOCKS
                 BITCOIN'S POTENTIAL FOR DAILY TRANSACTIONS AND WEB3
@@ -960,7 +960,7 @@ function App() {
           <div className="mb-12">
             <div
               ref={textRef1}
-              className="text-left text-subtitle mb-8 xl2:leading-none 2xl:mb-32"
+              className="text-left text-subtitle leading-tight mb-8 xl2:leading-none 2xl:mb-32"
             >
               <div>A UTXO model blockchain</div>
               <div>
@@ -976,7 +976,7 @@ function App() {
               />
             </div>
 
-            <div ref={textRef2} className="text-right text-subtitle ">
+            <div ref={textRef2} className="text-right text-subtitle leading-tight xl2:leading-none">
               <div className="block md:hidden">
                 <div>1:1 Satoshi Mapping</div>
                 <div> makes our blockchain </div>
@@ -1032,7 +1032,7 @@ function App() {
               className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300"
               onClick={warning}
             >
-              <img src={Icon8} alt="" className="w-28 h-28 mb-8" />
+              <img src={Icon8} alt="" className="w-20 h-20 md:w-28 md:h-28 mb-8" />
               <div className="text-[22px] md:text-subhead mb-4 font-bold">KNOWLEDGE BASE</div>
               <div>
                 <div className="text-sm text-[#86888B]">
@@ -1055,7 +1055,7 @@ function App() {
               className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300"
               onClick={warning}
             >
-              <img src={Icon9} alt="" className="w-28 h-28 mb-8" />
+              <img src={Icon9} alt="" className="w-20 h-20 md:w-28 md:h-28 mb-8" />
               <div className="text-[22px] md:text-subhead font-bold">DECENTRALIZED VIA</div>
               <div className="text-[22px] md:text-subhead mb-4 font-bold">PROOF-OF-WORK</div>
               <div>
@@ -1079,7 +1079,7 @@ function App() {
               className="cursor-pointer border box-border border-solid border-[#3D3D3D] p-7 h-96 relative rounded-tl-3xl hover:translate-x-2 transition duration-300"
               onClick={warning}
             >
-              <img src={Icon10} alt="" className="w-28 h-28 mb-8" />
+              <img src={Icon10} alt="" className="w-20 h-20 md:w-28 md:h-28 mb-8" />
               <div className="text-[22px] md:text-subhead mb-4 font-bold">Why MVC</div>
               <div className="text-sm text-[#86888B]">
                 The Revolutionary Sidechain of Bitcoin
@@ -1099,7 +1099,7 @@ function App() {
         </div>
         <div className="container mb-20">
           <div className="flex py-8 flex-col box-border border-solid border-[#3D3D3D] border-y md:flex-row md:items-center justify-between md:py-16">
-            <div className="text-subtitle">
+            <div className="text-subtitle leading-none">
               <div>Bitcoin</div>
               <div className="text-gradient">Micropayment</div>
             </div>
@@ -1200,7 +1200,7 @@ function App() {
         </div>
         <div className="container mb-28 mt-24 lg:mt-36">
           <div className="flex py-8 flex-col box-border border-solid border-[#3D3D3D] border-y md:flex-row md:items-center justify-between md:py-16">
-            <div className="text-subtitle">
+            <div className="text-subtitle leading-none">
               <div>Entering the</div>
               <div>
                 <span className="text-gradient">BVM</span> Era
@@ -1253,7 +1253,7 @@ function App() {
         </div>
         <div className="container mb-20">
           <div className="flex py-8 flex-col box-border border-solid border-[#3D3D3D] border-y md:flex-row md:items-center justify-between md:py-16">
-            <div className="text-subtitle">
+            <div className="text-subtitle leading-none">
               <div>
                 Build <span className="text-gradient">Web3</span> with
               </div>
@@ -1458,7 +1458,7 @@ function App() {
         </div>
 
         <div className="container flex mb-12 mt-24 lg:mt-36">
-          <div className="text-subtitle">
+          <div className="text-subtitle leading-none">
             <div>
               <span className="text-gradient">Partnerships</span> &
             </div>
