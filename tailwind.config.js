@@ -37,7 +37,7 @@ module.exports = {
       screens: {
         'xl2': '1360px',
       },
-      colors: {
+      colors: { 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -106,7 +106,7 @@ module.exports = {
         shake: "shake 0.5s infinite"
       },
       backgroundImage: {
-        "hero-pattern": "url('@/assets/bg-eyepng.png')",
+        "hero-pattern": "url('@/assets/thirdbg.png')",
         "text-gradient": "linear-gradient(0deg, #48AAAD 0%, #177DDB 100%)",
         "custom-bottom": "url('@/assets/Ellipse.png')",
       },
