@@ -29,7 +29,11 @@ import bg7 from "../src/assets/bg7.png";
 import Imagecontainer1 from "../src/assets/Imagecontainer1.png";
 import Imagecontainer2 from "../src/assets/Imagecontainer2.png";
 import Imagecontainer3 from "../src/assets/Imagecontainer3.png";
+import iconClose from "../src/assets/icon_close.png";
+import imgCoin from "../src/assets/imgCoin.png";
 import useIntersectionObserver from "./useIntersectionObserver.tsx";
+import placard from "../src/assets/placard.png";
+
 import {
   Popover,
   PopoverButton,
@@ -398,6 +402,26 @@ function App() {
   const closePopover5 = () => {
     setIsPopoverOpen5(false);
   };
+
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+  
+  const handleLinkTo = () => {
+    window.open("https://docs.google.com/presentation/u/0/d/1sSts6cvLgjEt2z85EW871K8v8pPdXaj8c6YwRcqdcCs/mobilepresent", "_blank", "noopener,noreferrer");
+  };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isModalOpen]);
 
   return (
     <>
@@ -769,6 +793,51 @@ function App() {
           </div>
         </div>
         <div className="lg:h-[100dvh] box-border bg-hero-pattern bg-no-repeat bg-center bg-contain relative">
+          {isModalOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+              <div className="relative w-[80%] md:w-[560px] rounded shadow-lg bg-placard-img">
+                {/* <button
+              className="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-800"
+              onClick={handleCloseModal}
+            >
+              &times;
+            </button> */}
+                {/* 弹窗内容 */}
+                <img src={iconClose} alt="" className="w-8 h-8 md:w-12 md:h-12 absolute -top-8 -right-8 md:-top-11 md:-right-11 cursor-pointer" onClick={handleCloseModal}/>
+                <img src={imgCoin} alt="" className="absolute w-[43px] h-[49px] -top-6 md:w-[86px] md:h-[95px] md:-top-12 left-1/2"/>
+                <img src={placard} alt="" className="md:w-[560px] md:h-[424px]"/>
+                <div className="flex flex-col md:flex-row justify-center pl-4 py-4 md:py-12 md:pl-0">
+                  <div
+                    className="text-xl inline-flex items-center group cursor-pointer"
+                    onClick={handleCloseModal}
+                  >
+                    <div className="text-base font-bold mr-4 transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
+                      ENTER THE WEBSITE
+                    </div>
+                    <img
+                      src={iconDefault}
+                      alt="Icon"
+                      className="w-10 h-10 transition-all duration-500 ease-in-out transform group-hover:-translate-x-1 group-hover:brightness-125 group-hover:contrast-150"
+                    />
+                  </div>
+                  <div
+                    className="text-xl inline-flex items-center group cursor-pointer mt-6 md:mt-0 md:ml-12"
+                    onClick={handleLinkTo}
+                  >
+                    <div className="text-base font-bold mr-4 transition-transform transform duration-500 ease-in-out group-hover:translate-x-1">
+                      LEARN MORE
+                    </div>
+                    <img
+                      src={iconDefault}
+                      alt="Icon"
+                      className="w-10 h-10 transition-all duration-500 ease-in-out transform group-hover:-translate-x-1 group-hover:brightness-125 group-hover:contrast-150"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="container relative pt-20 lg:pt-[6rem] 2xl:pt-40">
             {/* <div className="container relative pt-20 lg:pt-[18vh]"> */}
             <div className="font-bold leading-tight text-2xl md:text-3xl lg:text-4xl lg:leading-tight xl2:text-title">

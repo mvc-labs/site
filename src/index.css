@@ -148,6 +148,11 @@
     background-image: url('/src/assets/Ellipse.png'); 
     /* bacxkground-position: bottom; */
   }
+  .bg-placard-img{
+    background-image: url('/src/assets/herocard.png'); 
+    /* backdrop-filter: blur(10px);  */
+
+  }
   .notice-text{
     font-family: 'Anonymous Pro', monospace;
   }
