@@ -86,6 +86,9 @@
     .text-subtitle {
       @apply text-2xl md:text-3xl xl2:text-[50px] xl2:leading-none 2xl:text-subtle font-bold;
     }
+    .text-innersubtitle {
+      @apply text-2xl md:text-[40px] font-bold;
+    }
   }
   body{
     color:#fff;
