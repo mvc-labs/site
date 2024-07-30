@@ -17,7 +17,7 @@ function App() {
             {/* <Route path="/ecosystem" element={<Ecosystem />} /> */}
             {/* <Route path="/dao" element={<DAO />} /> */}
             <Route path="/buildergrant" element={<BuilderGrant />} />
-            {/* <Route path="*" element={<Home />} /> Catch-all 路由，指向 Home */}
+            <Route path="*" element={<Home />} /> 
           </Routes>
         </main>
       <Footer />
